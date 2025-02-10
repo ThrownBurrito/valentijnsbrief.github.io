@@ -12,7 +12,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Poppins', sans-serif;
         }
         .container {
             background: #fff;
@@ -28,6 +28,8 @@
         }
         .container h1 {
             color: #e60073;
+            font-size: 24px;
+            font-weight: bold;
         }
         .container img {
             width: 100%;
@@ -40,14 +42,43 @@
         .spotify {
             margin-top: 15px;
         }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 2px solid #e60073;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+        button {
+            background-color: #e60073;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #c4005e;
+        }
+        #error-message {
+            color: red;
+            display: none;
+            margin-top: 10px;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
     <div class="container" id="password-screen">
-        <h1>Voer het wachtwoord in</h1>
+        <h1>Voer het wachtwoord in 🔒</h1>
         <input type="password" id="password" placeholder="Wachtwoord" />
         <button onclick="checkPassword()">Bevestigen</button>
-        <p id="error-message" style="color: red; display: none;">Verkeerd wachtwoord, probeer opnieuw.</p>
+        <p id="error-message">Verkeerd wachtwoord, probeer opnieuw.</p>
     </div>
 
     <div class="container hidden" id="valentijnsbrief">
@@ -61,7 +92,7 @@
 
     <script>
         function checkPassword() {
-            const wachtwoord = "pokje"; // Verander dit naar het echte wachtwoord
+            const wachtwoord = "liefde"; // Verander dit naar het echte wachtwoord
             const input = document.getElementById("password").value;
             const errorMessage = document.getElementById("error-message");
 
