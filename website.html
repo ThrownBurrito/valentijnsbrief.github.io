@@ -14,7 +14,7 @@
             margin: 0;
             font-family: 'Courier New', Courier, monospace;
         }
-        .brief-container {
+        .container {
             background: #fff;
             width: 90%;
             max-width: 400px;
@@ -23,15 +23,18 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             text-align: center;
         }
-        .brief-container h1 {
+        .hidden {
+            display: none;
+        }
+        .container h1 {
             color: #e60073;
         }
-        .brief-container img {
+        .container img {
             width: 100%;
             border-radius: 10px;
             margin: 10px 0;
         }
-        .brief-container p {
+        .container p {
             color: #333;
         }
         .spotify {
@@ -40,7 +43,14 @@
     </style>
 </head>
 <body>
-    <div class="brief-container">
+    <div class="container" id="password-screen">
+        <h1>Voer het wachtwoord in</h1>
+        <input type="password" id="password" placeholder="Wachtwoord" />
+        <button onclick="checkPassword()">Bevestigen</button>
+        <p id="error-message" style="color: red; display: none;">Verkeerd wachtwoord, probeer opnieuw.</p>
+    </div>
+
+    <div class="container hidden" id="valentijnsbrief">
         <h1>Voor Mijn Liefste Tessje ❤️</h1>
         <img src="https://source.unsplash.com/300x200/?love" alt="Liefdesfoto">
         <p>Lieve schat, ik hou zoveel van je! Jij bent mijn alles. 💖</p>
@@ -48,5 +58,20 @@
             <iframe src="https://open.spotify.com/embed/track/3kLE2Jsxeb3W2bhx82bPlb?" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
     </div>
+
+    <script>
+        function checkPassword() {
+            const wachtwoord = "pokje"; // Verander dit naar het echte wachtwoord
+            const input = document.getElementById("password").value;
+            const errorMessage = document.getElementById("error-message");
+
+            if (input === wachtwoord) {
+                document.getElementById("password-screen").style.display = "none";
+                document.getElementById("valentijnsbrief").classList.remove("hidden");
+            } else {
+                errorMessage.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
