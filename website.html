@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Mijn Valentijnsbrief</title>
     <style>
         body {
@@ -22,14 +22,17 @@
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             text-align: center;
+            overflow-y: auto;
+            max-height: 90vh;
         }
         .hidden {
             display: none;
         }
         .container h1 {
             color: #e60073;
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
+            margin-bottom: 10px;
         }
         .container img {
             width: 100%;
@@ -38,6 +41,11 @@
         }
         .container p {
             color: #333;
+            text-align: left;
+            line-height: 1.6;
+            font-size: 18px;
+            margin-bottom: 15px;
+            padding: 0 10px;
         }
         .spotify {
             margin-top: 15px;
@@ -82,31 +90,52 @@
     </div>
 
     <div class="container hidden" id="valentijnsbrief">
-        <h1>Voor Mijn Liefste Tessje ❤️</h1>
-        <img src="https://source.unsplash.com/300x200/?love" alt="Liefdesfoto">
-        <div class="spotify">
-            <iframe src="https://open.spotify.com/embed/track/3kLE2Jsxeb3W2bhx82bPlb?" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <div class="header">
+            <h1><b>Voor Mijn Liefste Tessje ❤️</b></h1>
+            <img src="https://cdn.discordapp.com/attachments/587035882767515665/1338997923689664542/IMG-20240901-WA0002.jpg?ex=67ad1e7e&is=67abccfe&hm=4f864d81005e4e5a5b6e46cb9a48b8f73e4aa1d07138b2766ac65c6759075897&" alt="Liefdesfoto">
+            <div class="spotify">
+                <iframe src="https://open.spotify.com/embed/track/3kLE2Jsxeb3W2bhx82bPlb?" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
         </div>
-        <p>Hallo mijn valentijn ♥️,
-Ik schrijf dit terwijl er een traantje over mn wang loopt. Om te beginnen, ik houd echt zo enorm veel van jou. Onze eerste valentijn vieren we op een afstand van elkaar, maar het is even speciaal als alle anderen die gaan komen in de toekomst.
- 
-Elke dag dat ik opsta ben ik zo enorm blij dat ik jou ben tegengekomen in Budapest. Terwijl ik met mijn vriendjes op een reis was waar alles losjes voelde en we maar deden waar we zin in hadden, gebeurde iets bizars. Na een paar dagen op reis te zijn geweest sprak ik in een bar een paar meiden aan. Tess en Hanna. Ik keek Tess in haar ogen aan en ik voelde gelijk iets bijzonders. Vanaf dat moment wilde ik eigenlijk al meer weten van haar. We gingen aan een tafel zitten, en ik probeerde op elke manier wat meer contact te hebben ( weet je nog onze beentjes :) ). Met veel kletsen en het mega gezellig hebben als groep. Leerde is je langzaam een beetje kennen. Hier waar ik eerst in de stemming zat van de losse vakantie, voelde ik ineens iets heel anders. Samen met jou zijn voelde als een zekerheid, alsof alles goed zat. Ik dacht totaal niet meer aan dingens als; ons bizar slechte hostel of slaap. Het voelde zo vertrouwd en alsof het gewoon klopte. Na een bijzonder leuke avond in Budapest die we wel afsloten uiteindelijk met allemaal naar bed gaan, werd ik de volgende dag wakker met een gedachte. Ik wou jou opnieuw weer zien. Met appjes en n klein moeilijkheidje ( kapper...) hebben we afgesproken als groep. Vanaf hier gingen we wandelen door Budapest, als ik er aan terug denk krijg ik altijd het gevoel van de film, before sunrise. We moesten weer even wennen aan elkaar, maar echt heel snel voelde het weer goed. De zon ging onder, jij je prosecco boot tour gehad, en we kwamen weer samen. Dit voelde zo fijn en als groep hebben we zo een gezellige avond gehad. Waar wij uiteindelijk samen gingen lopen en toen het onvoorzienbare gesprek hielden, hoe we verder wilden samen. We bestempelde het als ' mysterieus' wat ik heel mooi, maar ook moeilijk vond. Jullie gingen naar Bratislava, waar wij de dag erna met een spa als tussenstop ook heen zouden gaan. Dat dit gebeurde installeerde echt een idee van hoe kan dit zo toevallig zo perfect uitkomen. Al helemaal toen we elkaar plots tegen kwamen met lopen, (waar we wel een locatie gestuurd hadden :) maar oprecht niet gecheckt). Dat mijn vrienden weg renden deed mij pijn en vond ik naar. Maar ik werd zo enorm blij toen ik jou weer zag. Toen we allemaal weer samen waren voelde dat voor mij ook heel goed. Tess de dag die wij samen in Bratislava beleefd hebben, zal voor altijd een van de mooiste dagen zijn in mijn leven. ♥️
+        <p>
+            Hallo mijn valentijn ♥️,
+        </p>
+        <p>
+            Ik schrijf dit terwijl er een traantje over mijn wang loopt. Om te beginnen, ik houd echt zo enorm veel van jou. Onze eerste Valentijn vieren we op een afstand van elkaar, maar het is even speciaal als alle anderen die gaan komen in de toekomst.
+        </p>
+        <p>
+            Elke dag dat ik opsta ben ik zo enorm blij dat ik jou ben tegengekomen in Budapest. Terwijl ik met mijn vriendjes op een reis was waar alles losjes voelde en we maar deden waar we zin in hadden, gebeurde iets bizars. Na een paar dagen op reis te zijn geweest sprak ik in een bar een paar meiden aan. Tess en Hanna. Ik keek Tess in haar ogen aan en ik voelde gelijk iets bijzonders. Vanaf dat moment wilde ik eigenlijk al meer weten van haar. We gingen aan een tafel zitten, en ik probeerde op elke manier wat meer contact te hebben ( weet je nog onze beentjes :) ). Met veel kletsen en het mega gezellig hebben als groep. Leerde is je langzaam een beetje kennen. Hier waar ik eerst in de stemming zat van de losse vakantie, voelde ik ineens iets heel anders. Samen met jou zijn voelde als een zekerheid, alsof alles goed zat. Ik dacht totaal niet meer aan dingens als; ons bizar slechte hostel of slaap. Het voelde zo vertrouwd en alsof het gewoon klopte. Na een bijzonder leuke avond in Budapest die we wel afsloten uiteindelijk met allemaal naar bed gaan, werd ik de volgende dag wakker met een gedachte. Ik wou jou opnieuw weer zien. Met appjes en n klein moeilijkheidje ( kapper...) hebben we afgesproken als groep. Vanaf hier gingen we wandelen door Budapest, als ik er aan terug denk krijg ik altijd het gevoel van de film, before sunrise. We moesten weer even wennen aan elkaar, maar echt heel snel voelde het weer goed. De zon ging onder, jij je prosecco boot tour gehad, en we kwamen weer samen. Dit voelde zo fijn en als groep hebben we zo een gezellige avond gehad. Waar wij uiteindelijk samen gingen lopen en toen het onvoorzienbare gesprek hielden, hoe we verder wilden samen. We bestempelde het als ' mysterieus' wat ik heel mooi, maar ook moeilijk vond. Jullie gingen naar Bratislava, waar wij de dag erna met een spa als tussenstop ook heen zouden gaan. Dat dit gebeurde installeerde echt een idee van hoe kan dit zo toevallig zo perfect uitkomen. Al helemaal toen we elkaar plots tegen kwamen met lopen, (waar we wel een locatie gestuurd hadden :) maar oprecht niet gecheckt). Dat mijn vrienden weg renden deed mij pijn en vond ik naar. Maar ik werd zo enorm blij toen ik jou weer zag. Toen we allemaal weer samen waren voelde dat voor mij ook heel goed. Tess de dag die wij samen in Bratislava beleefd hebben, zal voor altijd een van de mooiste dagen zijn in mijn leven. ♥️
+	</p>
+	<p>
 Hierna splitsen onze treinsporen, en gingen we door met onze reizen. Onze connectie stopte alleen echt niet. Het contact dat we hielden over whatsapp en het videobellen is voor mij zo bijzonder. Met jou babbellen voelde zo speciaal en fijn. Het waren momenten in mijn reis dat ik helemaal oplichtte. Waar we de reis weer zo gepland hadden met slechte hostels etc. Waar het zo leuk was om nog te reizen speelde steeds jij in mijn hoofd. Ik wou weer samen met jou zijn, om je nog beter te leren kennen. We hielden super veel contact waar jij nog op reis was. Totdat ik dan zelf ook op reis ging. Wildkamperen in de ardennen, waar ik mega ziek werd. Met mijn vrienden had ik al afgesproken dat ik op een datum terug wou zijn waar wij onze eerste date in Nederland hadden ingepland. Ik was zo bang dat ik nog ziek zou zijn. Gelukkig was dit niet zo en we spraken in Nijmegen af voor het eerst in Nederland. Hier werd weer mijn gevoel bevestigd en ik begon je echt enorm enorm leuk te vinden. Hierna hebben we hele mooie dates gehad, waar onze connecte voor mij echt steeds dieper begon te voelen. Ik begon mij echt begrepen te voelen door jou, gewaardeerd en geaccepteerd voor alles wat ik ben. Ik zag het aan alles, samen met jou zijn maakt mij blij, gelukkig en dankbaar dat ik leef.
 Ik wist het zeker, ik wou niet meer enkel kunnen zeggen dat ik je leuk vind, ik wou kunnen zeggen dat ik van je houd. Op 12 september 2024 terwijl we naar Mook gingen fietsen kon ik de voor mij spannende vraag niet meer inhouden. Met een brok in mijn keel vroeg ik of je mijn vriendin wou zijn, en je zei ja ♥️. 
-Tegenwoordig zeggen we nu ook wel pok, en pokje ik ben zo enorm dankbaar dat we elkaar hebben mogen ontmoeten. Elke nacht voordat ik ga slapen denk ik ook aan je, ik denk dan aan:  je mooie lach, je stem, je strawberry blonde haar, je lievigheid, je avonturierlijkheid, je levendigheid, je openheid, je gedrevenheid, je interesse in de wereld, je creativiteit, je vindingrijkheid, je ondernemerschap, je mooie ogen, je prachtige juicy lippen, je tolerantie, je sociale bewustzijn. Ik kan eigenlijk nog zo lang doorgaan, maar liefje ik denk dan aan alles van jou, tot ik in slaap val. 
+	</p>
+	<p>
+Tegenwoordig zeggen we nu ook wel pok, en pokje ik ben zo enorm dankbaar dat we elkaar hebben mogen ontmoeten. Elke nacht voordat ik ga slapen denk ik ook aan je, ik denk dan aan:  je mooie lach, je stem, je strawberry blonde haar, je lievigheid, je avonturierlijkheid, je levendigheid, je openheid, je gedrevenheid, je interesse in de wereld, je creativiteit, je vindingrijkheid, je ondernemerschap, je mooie ogen, je prachtige juicy lippen, je tolerantie, je sociale bewustzijn. Ik kan eigenlijk nog zo lang doorgaan, maar liefje ik denk dan aan alles van jou, tot ik in slaap val.
+	</p> 
+	<p>
 Ik wil ook even stil staan bij de moeilijke dingen die we hebben mee gemaakt. We hebben samen al een paar moeilijkheden doorstaan. Dit was in het moment soms zwaar, en dat was moeilijk. Ik vind het zo waardevol dat we hier samen doorheen zijn gekomen en we allebei alles er voor geven om alles goed te maken voelen. Het voelt voor mij alsof onze relatie en band met elkaar elke dag een stukje sterker word. Dit waren dan soms ook juist momenten die dit zelfs versnelden achteraf. In mijn gedachten heb ik soms nagedacht alsof we hier versneld doorheen gingen zodat we elkaar op zo een goed niveau begrepen dat jou mooie reis ons geen moeilijkheden op zou leveren. Tess wij zijn zo sterk samen, we hebben in het begin van onze relatie op onze eerste vakantie zelfs een autocrash samen doorstaan. Dit was zo een moeilijk iets, maar als ik er aan terug denk, denk ik vooral aan hoe erg we er voor elkaar waren. We steunden elkaar waar we het allebei steeds nodig hadden, en we zijn er samen helemaal doorheen gekomen.
+	</p>
+	<p>
 Misschien was het wel gewoon een test, om even te checken of we klaar zijn voor alle bijzondere avonturen en reizen die ons samen nog te wachten staan. Tess wij gaan zo veel mooie momenten samen mee maken. Ik kan niet wachten om met jou deze bijzondere reizen te delen. Op het moment dat ik nu schrijf weet ik dat we binnenkort naar Parijs gaan. Dit word onze tweede reis samen en nog maar het begin van velen. 
-Vandaag is dit niet het enige bijzondere nieuws wat ik heb gekregen. Ik heb namelijk ook gehoord dat je volgende week woensdag weer terug naar Nederland komt van je reis. Na een paar weken je hebben moeten missen, en dan ook onze eerste Valentijns dag, gaan we dit helemaal inhalen. 
+	</p>
+	<p>
+Vandaag is dit niet het enige bijzondere nieuws wat ik heb gekregen. Ik heb namelijk ook gehoord dat je volgende week woensdag weer terug naar Nederland komt van je reis. Na een paar weken je hebben moeten missen, en dan ook onze eerste Valentijns dag, gaan we dit helemaal inhalen.
+	</p>
+	<p> 
 
 Tess ik kan niet wachten om je weer te zien, vast te houden, te knuffelen en je aan te staren. 
+	</p>
+	<p>
 
-Liefs, Max, je Valentijn ♥️</p>
+Liefs, Max, je Valentijn ♥️
+        </p>
         
     </div>
 
     <script>
         function checkPassword() {
-            const wachtwoord = "pokje"; // Verander dit naar het echte wachtwoord
+            const wachtwoord = "pokje"; 
             const input = document.getElementById("password").value;
             const errorMessage = document.getElementById("error-message");
 
